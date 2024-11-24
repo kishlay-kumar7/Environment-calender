@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calender.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+</head>
+<body>
+    <div class="hero">
+        
+        <div id="calendar"></div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        calendarEvents: [
+        {
+        id: 'event115',
+        name: "National Bird Day",
+        date: "January/5/2020",
+        description: "National Bird Day is celebrated on January 5th to raise awareness about the importance of bird conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event116',
+        name: "International Zebra Day",
+        date: "January/31/2020",
+        description: "International Zebra Day, observed on January 31st, raises awareness about the conservation of zebras.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event117',
+        name: "World Wetlands Day",
+        date: "February/2/2020",
+        description: "World Wetlands Day is celebrated on February 2nd to raise awareness about wetlands and their importance.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event118',
+        name: "World Ostrich Day",
+        date: "February/2/2020",
+        description: "World Ostrich Day, celebrated on February 2nd, raises awareness about ostrich conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event119',
+        name: "World Marmot Day",
+        date: "February/2/2020",
+        description: "World Marmot Day, observed on February 2nd, promotes awareness about marmots and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event120',
+        name: "World Pangolin Day",
+        date: "February/Third Saturday/2020",
+        description: "World Pangolin Day is observed on the third Saturday of February to raise awareness about pangolins and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event121',
+        name: "World Whale Day",
+        date: "February/Third Sunday/2020",
+        description: "World Whale Day, celebrated on the third Sunday of February, promotes awareness about whale conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event122',
+        name: "World Bonobo Day",
+        date: "February/14/2020",
+        description: "World Bonobo Day is observed on February 14th to raise awareness about bonobos and their habitat.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event123',
+        name: "World Hippopotamus Day",
+        date: "February/15/2020",
+        description: "World Hippopotamus Day, celebrated on February 15th, raises awareness about hippo conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event124',
+        name: "International Polar Bear Day",
+        date: "February/27/2020",
+        description: "International Polar Bear Day is observed on February 27th to promote awareness about polar bear conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+        {
+        id: 'event77',
+        name: "World Wildlife Day",
+        date: "March/3/2020",
+        description: "World Wildlife Day is celebrated on March 3rd to raise awareness about the world's wild animals and plants.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event78',
+        name: "Solar Appreciation Day",
+        date: "March/Second Friday/2020",
+        description: "Solar Appreciation Day is observed on the second Friday of March to celebrate solar energy and its benefits.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event79',
+        name: "International Day of Action for Rivers",
+        date: "March/14/2020",
+        description: "This day raises awareness about the importance of rivers and advocates for their protection.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event80',
+        name: "World Consumer Rights Day",
+        date: "March/15/2020",
+        description: "World Consumer Rights Day, celebrated on March 15th, promotes the rights of consumers.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event81',
+        name: "Buzzards Day",
+        date: "March/15/2020",
+        description: "Buzzards Day celebrates buzzards and their role in the ecosystem.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event82',
+        name: "Digital Cleanup Day",
+        date: "March/15/2025",
+        description: "Digital Cleanup Day encourages individuals and organizations to declutter their digital spaces.",
+        type: "holiday",
+        everyYear: false // Occurs only in 2025
+    },
+    {
+        id: 'event83',
+        name: "National Panda Day",
+        date: "March/16/2020",
+        description: "National Panda Day raises awareness about the conservation of pandas and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event84',
+        name: "Global Recycling Day",
+        date: "March/18/2020",
+        description: "Global Recycling Day aims to promote recycling as a key solution to environmental issues.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event85',
+        name: "World Serval Day",
+        date: "March/18/2020",
+        description: "World Serval Day raises awareness about servals and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event86',
+        name: "Taxonomist Appreciation Day",
+        date: "March/19/2020",
+        description: "Taxonomist Appreciation Day honors taxonomists and their contributions to biodiversity.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event87',
+        name: "World Sparrow Day",
+        date: "March/20/2020",
+        description: "World Sparrow Day, celebrated on March 20th, raises awareness about sparrows and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event88',
+        name: "World Frog Day",
+        date: "March/20/2020",
+        description: "World Frog Day, observed on March 20th, highlights the importance of frog conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event89',
+        name: "World Rewilding Day",
+        date: "March/20/2020",
+        description: "World Rewilding Day promotes the restoration of ecosystems and wildlife.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event90',
+        name: "International Day of Forests",
+        date: "March/21/2020",
+        description: "International Day of Forests, celebrated on March 21st, raises awareness about the importance of forests.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event91',
+        name: "World Planting Day",
+        date: "March/21/2020",
+        description: "World Planting Day encourages people to plant trees and plants.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event92',
+        name: "World Wood Day",
+        date: "March/21/2020",
+        description: "World Wood Day, celebrated on March 21st, honors the importance of wood and forests.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event93',
+        name: "World Water Day",
+        date: "March/22/2020",
+        description: "World Water Day, observed on March 22nd, highlights the importance of freshwater and advocates for sustainable management.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event94',
+        name: "International Seal Day",
+        date: "March/22/2020",
+        description: "International Seal Day raises awareness about the conservation of seals.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event95',
+        name: "World Meteorological Day",
+        date: "March/23/2020",
+        description: "World Meteorological Day, observed on March 23rd, highlights the importance of meteorology and its contribution to society.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event96',
+        name: "International Day of Zero Waste",
+        date: "March/30/2020",
+        description: "International Day of Zero Waste promotes sustainable practices to minimize waste.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event97',
+        name: "Manatee Appreciation Day",
+        date: "March/Last Wednesday/2020",
+        description: "Manatee Appreciation Day, celebrated on the last Wednesday of March, raises awareness about the conservation of manatees.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event98',
+        name: "World Aquatic Animal Day",
+        date: "April/3/2020",
+        description: "World Aquatic Animal Day, observed on April 3rd, focuses on the conservation of aquatic animals.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event99',
+        name: "World Rat Day",
+        date: "April/4/2020",
+        description: "World Rat Day, celebrated on April 4th, raises awareness about the importance of rats in ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event100',
+        name: "International Beaver Day",
+        date: "April/7/2020",
+        description: "International Beaver Day, observed on April 7th, promotes the conservation of beavers.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event101',
+        name: "Zoo Lovers Day",
+        date: "April/8/2020",
+        description: "Zoo Lovers Day, celebrated on April 8th, promotes awareness about the importance of zoos and wildlife conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event102',
+        name: "Arbor Day",
+        date: "April/26/2020",
+        description: "Arbor Day is celebrated on April 26th to encourage planting trees and promoting tree care.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event103',
+        name: "Bat Appreciation Day",
+        date: "April/17/2020",
+        description: "Bat Appreciation Day raises awareness about bats and their role in the ecosystem.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event104',
+        name: "Earth Day",
+        date: "April/22/2020",
+        description: "Earth Day, celebrated on April 22nd, promotes environmental protection and sustainability.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event105',
+        name: "International Pallas's Cat Day",
+        date: "April/23/2020",
+        description: "International Pallas's Cat Day raises awareness about the conservation of Pallas's cats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event106',
+        name: "World Day for Laboratory Animals",
+        date: "April/24/2020",
+        description: "World Day for Laboratory Animals promotes awareness about the ethical treatment of laboratory animals.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event107',
+        name: "World Tapir Day",
+        date: "April/27/2020",
+        description: "World Tapir Day, celebrated on April 27th, raises awareness about tapir conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event108',
+        name: "International Hyena Day",
+        date: "April/27/2020",
+        description: "International Hyena Day promotes awareness about hyenas and their role in ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event109',
+        name: "Day of Remembrance for all Victims of Chemical Warfare",
+        date: "April/29/2020",
+        description: "This day is dedicated to remembering the victims of chemical warfare.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event110',
+        name: "Green Up Day",
+        date: "May/First Saturday/2020",
+        description: "Green Up Day encourages communities to clean and green their neighborhoods.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event111',
+        name: "World Tuna Day",
+        date: "May/2/2020",
+        description: "World Tuna Day, observed on May 2nd, promotes awareness about tuna conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event112',
+        name: "International Leopard Day",
+        date: "May/3/2020",
+        description: "International Leopard Day raises awareness about leopard conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event113',
+        name: "Wild Koala Day",
+        date: "May/3/2020",
+        description: "Wild Koala Day promotes the conservation of wild koalas.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event114',
+        name: "Greenery Day",
+        date: "May/4/2020",
+        description: "Greenery Day, celebrated on May 4th in Japan, encourages appreciation for nature.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event115',
+        name: "World Donkey Day",
+        date: "May/8/2020",
+        description: "World Donkey Day promotes awareness about the conservation of donkeys.",
+        type: "holiday",
+        everyYear: true
+    },
+        {
+        id: 'event67',
+        name: "World Binturong Day",
+        date: "May/Second Saturday/2020",
+        description: "World Binturong Day is celebrated on the second Saturday of May to raise awareness about the binturong, a unique mammal native to Southeast Asia.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event68',
+        name: "Endangered Species Day",
+        date: "May/Third Friday/2020",
+        description: "Endangered Species Day, observed on the third Friday of May, focuses on the protection of endangered species and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event69',
+        name: "Bike-to-Work Day",
+        date: "May/Third Friday/2020",
+        description: "Bike-to-Work Day, also on the third Friday of May, encourages people to bike to work to promote cycling as a sustainable mode of transport.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event70',
+        name: "World Bee Day",
+        date: "May/20/2020",
+        description: "World Bee Day, celebrated on May 20th, raises awareness about the importance of bees and other pollinators in our ecosystem.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event71',
+        name: "International Day for Biological Diversity (World Biodiversity Day)",
+        date: "May/22/2020",
+        description: "International Day for Biological Diversity, observed on May 22nd, aims to increase understanding and awareness of biodiversity issues.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event72',
+        name: "World Turtle Day",
+        date: "May/23/2020",
+        description: "World Turtle Day, celebrated on May 23rd, aims to raise awareness about turtles and tortoises and the threats they face.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event73',
+        name: "European Day of Parks",
+        date: "May/24/2020",
+        description: "European Day of Parks, observed on May 24th, celebrates the value of parks and protected areas across Europe.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event74',
+        name: "World Otter Day",
+        date: "May/25/2020",
+        description: "World Otter Day, celebrated on May 25th, raises awareness about the conservation of otters and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event75',
+        name: "World Dugong Day",
+        date: "May/28/2020",
+        description: "World Dugong Day, observed on May 28th, focuses on the conservation of dugongs and their marine ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event76',
+        name: "Black Birders Week",
+        date: "May/29/2020",
+        description: "Black Birders Week, celebrated on May 29th, promotes diversity in the birding community and highlights the importance of bird conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+        {
+        id: 'event39',
+        name: "World Reef Day",
+        date: "June/1/2020",
+        description: "World Reef Day, celebrated on June 1st, aims to raise awareness about the importance of coral reefs and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event40',
+        name: "World Peatlands Day",
+        date: "June/2/2020",
+        description: "World Peatlands Day, observed on June 2nd, highlights the significance of peatlands and their role in climate regulation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event41',
+        name: "World Bicycle Day",
+        date: "June/3/2020",
+        description: "World Bicycle Day, celebrated on June 3rd, promotes the use of bicycles as a sustainable mode of transport.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event42',
+        name: "World Environment Day",
+        date: "June/5/2020",
+        description: "World Environment Day, observed on June 5th, encourages worldwide awareness and action for the protection of the environment.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event43',
+        name: "Solomon Memorial Day",
+        date: "June/5/2020",
+        description: "Solomon Memorial Day, also on June 5th, honors the memory of those who have contributed to environmental conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event44',
+        name: "World Oceans Day",
+        date: "June/8/2020",
+        description: "World Oceans Day, celebrated on June 8th, highlights the importance of oceans and the need to protect them.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event45',
+        name: "Coral Triangle Day",
+        date: "June/9/2020",
+        description: "Coral Triangle Day, observed on June 9th, celebrates the rich marine biodiversity of the Coral Triangle region.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event46',
+        name: "International Lynx Day",
+        date: "June/11/2020",
+        description: "International Lynx Day, celebrated on June 11th, raises awareness about the conservation of lynx species.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event47',
+        name: "National Cougar Day",
+        date: "June/12/2020",
+        description: "National Cougar Day, observed on June 12th, focuses on the protection and awareness of cougar populations.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event48',
+        name: "Global Wind Day",
+        date: "June/15/2020",
+        description: "Global Wind Day, celebrated on June 15th, promotes the use of wind energy and its benefits for the environment.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event49',
+        name: "World Sea Turtle Day",
+        date: "June/16/2020",
+        description: "World Sea Turtle Day, observed on June 16th, raises awareness about the conservation of sea turtles and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event50',
+        name: "World Day to Combat Desertification and Drought",
+        date: "June/17/2020",
+        description: "World Day to Combat Desertification and Drought, celebrated on June 17th, highlights the need for sustainable land management.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event51',
+        name: "World Croc Day",
+        date: "June/17/2020",
+        description: "World Croc Day, also on June 17th, raises awareness about the conservation of crocodiles and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event52',
+        name: "World Horseshoe Crab Day",
+        date: "June/20/2020",
+        description: "World Horseshoe Crab Day, observed on June 20th, focuses on the conservation of horseshoe crabs and their ecological role.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event53',
+        name: "World Giraffe Day",
+        date: "June/21/2020",
+        description: "World Giraffe Day, celebrated on June 21st, raises awareness about the conservation of giraffes and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event54',
+        name: "World Camel Day",
+        date: "June/22/2020",
+        description: "World Camel Day, observed on June 22nd, focuses on the significance of camels and their role in sustainable livelihoods.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event55',
+        name: "World Rainforest Day",
+        date: "June/22/2020",
+        description: "World Rainforest Day, also on June 22nd, emphasizes the importance of rainforests and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event56',
+        name: "Black Birders Week",
+        date: "June/24/2020",
+        description: "Black Birders Week, celebrated from June 24th, promotes diversity in the birding community and highlights conservation efforts.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event57',
+        name: "World Decarbonisation Day",
+        date: "June/25-28/2020",
+        description: "World Decarbonisation Day, observed from June 25th to 28th, focuses on reducing carbon emissions and promoting sustainability.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event58',
+        name: "World Population Day",
+        date: "July/11/2020",
+        description: "World Population Day, celebrated on July 11th, raises awareness about global population issues and their impacts.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event59',
+        name: "Shark Awareness Day",
+        date: "July/14/2020",
+        description: "Shark Awareness Day, observed on July 14th, aims to educate people about the importance of shark conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event60',
+        name: "World Chimpanzee Day",
+        date: "July/14/2020",
+        description: "World Chimpanzee Day, also on July 14th, raises awareness about the conservation of chimpanzees and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event61',
+        name: "World Orca Day",
+        date: "July/14/2020",
+        description: "World Orca Day, observed on July 14th, focuses on the conservation of orcas and their ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event62',
+        name: "World Snake Day",
+        date: "July/16/2020",
+        description: "World Snake Day, celebrated on July 16th, raises awareness about snakes and their ecological importance.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event63',
+        name: "International Day for the Conservation of the Mangrove Ecosystems",
+        date: "July/26/2020",
+        description: "International Day for the Conservation of the Mangrove Ecosystems, observed on July 26th, highlights the importance of mangroves in coastal protection.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event64',
+        name: "World Nature Conservation Day",
+        date: "July/28/2020",
+        description: "World Nature Conservation Day, celebrated on July 28th, raises awareness about the need for nature conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event65',
+        name: "International Tiger Day",
+        date: "July/29/2020",
+        description: "International Tiger Day, observed on July 29th, aims to raise awareness about tiger conservation and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event66',
+        name: "World Ranger Day",
+        date: "July/31/2020",
+        description: "World Ranger Day, celebrated on July 31st, honors the work of park rangers and their efforts in wildlife conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event9',
+        name: "International Clouded Leopard Day",
+        date: "August/4/2020",
+        description: "International Clouded Leopard Day, observed on August 4th, aims to raise awareness about the endangered clouded leopard and its habitat.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event10',
+        name: "International Moon Bear Day",
+        date: "August/8/2020",
+        description: "International Moon Bear Day, celebrated on August 8th, focuses on the conservation of moon bears and their protection from poaching.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event11',
+        name: "World Lion Day",
+        date: "August/10/2020",
+        description: "World Lion Day, observed on August 10th, is dedicated to raising awareness about lions and the conservation efforts to protect them.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event12',
+        name: "World Elephant Day",
+        date: "August/12/2020",
+        description: "World Elephant Day, celebrated on August 12th, aims to raise awareness about the plight of elephants and the need for conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event13',
+        name: "World Hirola Day",
+        date: "August/12/2020",
+        description: "World Hirola Day, observed on August 12th, focuses on the conservation of the critically endangered Hirola antelope.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event14',
+        name: "International Wolf Day",
+        date: "August/13/2020",
+        description: "International Wolf Day, celebrated on August 13th, aims to promote the conservation and protection of wolves and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event15',
+        name: "World Beach Day",
+        date: "September/1/2020",
+        description: "World Beach Day, also known as National Beach Day, encourages people to enjoy and appreciate the beauty of beaches and the importance of their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event16',
+        name: "International Primate Day",
+        date: "September/1/2020",
+        description: "International Primate Day, observed on September 1st, raises awareness about the conservation of primates and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event17',
+        name: "Japan Dolphin Day",
+        date: "September/1/2020",
+        description: "Japan Dolphin Day, celebrated on September 1st, aims to raise awareness about the protection of dolphins, particularly in Japan.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event18',
+        name: "Amazon Rainforest Day",
+        date: "September/5/2020",
+        description: "Amazon Rainforest Day, observed on September 5th, emphasizes the importance of the Amazon rainforest and the need for its conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event19',
+        name: "International Vulture Awareness Day",
+        date: "September/5/2020",
+        description: "International Vulture Awareness Day, celebrated on the first Saturday of September, aims to raise awareness about vultures and their critical role in ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event20',
+        name: "International Day of Clean Air for Blue Skies",
+        date: "September/7/2020",
+        description: "International Day of Clean Air for Blue Skies, observed on September 7th, promotes the importance of clean air and actions to improve air quality.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event21',
+        name: "World Dolphin Day",
+        date: "September/12/2020",
+        description: "World Dolphin Day, celebrated on September 12th, aims to raise awareness about dolphin conservation and protection.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event22',
+        name: "International Colugo Day",
+        date: "September/15/2020",
+        description: "International Colugo Day, observed on September 15th, raises awareness about colugos and the importance of conserving their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event23',
+        name: "International Day for the Preservation of the Ozone Layer",
+        date: "September/16/2020",
+        description: "International Day for the Preservation of the Ozone Layer, celebrated on September 16th, raises awareness about the importance of protecting the ozone layer.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event24',
+        name: "World Manta Day",
+        date: "September/17/2020",
+        description: "World Manta Day, observed on September 17th, aims to raise awareness about the conservation of manta rays and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event25',
+        name: "World Water Monitoring Day",
+        date: "September/18/2020",
+        description: "World Water Monitoring Day, celebrated on September 18th, emphasizes the importance of monitoring water quality and protecting water resources.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event26',
+        name: "International Raccoon Appreciation Day",
+        date: "October/1/2020",
+        description: "International Raccoon Appreciation Day is dedicated to celebrating and appreciating the unique qualities of raccoons.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event27',
+        name: "World Farm Animals Day",
+        date: "October/2/2020",
+        description: "World Farm Animals Day raises awareness about the welfare of farm animals and promotes their rights.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event28',
+        name: "World Habitat Day",
+        date: "October/5/2020", 
+        description: "World Habitat Day reminds us of our collective responsibility to ensure that every inhabitant has a decent place to live.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event29',
+        name: "World Animal Day",
+        date: "October/4/2020",
+        description: "World Animal Day promotes the welfare and rights of animals, emphasizing the importance of biodiversity.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event30',
+        name: "National Badger Day",
+        date: "October/6/2020",
+        description: "National Badger Day raises awareness about badgers and the conservation efforts to protect them.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event31',
+        name: "World Octopus Day",
+        date: "October/8/2020",
+        description: "World Octopus Day celebrates the intelligence and beauty of octopuses while highlighting the need for marine conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event32',
+        name: "Energy Efficiency Day",
+        date: "October/7/2020",
+        description: "Energy Efficiency Day focuses on the benefits of energy efficiency and encourages people to save energy.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event33',
+        name: "International Day for Natural Disaster Reduction",
+        date: "October/13/2020",
+        description: "International Day for Natural Disaster Reduction promotes global awareness of disaster risk reduction.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event34',
+        name: "International E-Waste Day",
+        date: "October/14/2020",
+        description: "International E-Waste Day raises awareness about the recycling of electronic waste and promotes sustainable practices.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event35',
+        name: "International Sawfish Day",
+        date: "October/17/2020",
+        description: "International Sawfish Day raises awareness about the endangered sawfish and the need for its conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event36',
+        name: "Stepping Stone Day",
+        date: "October/17/2020",
+        description: "Stepping Stone Day encourages individuals to take small steps towards making positive changes in their lives and communities.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event37',
+        name: "Sustainability Day",
+        date: "October/28/2020", 
+        description: "Sustainability Day promotes awareness of sustainability practices and encourages individuals to adopt eco-friendly habits.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event38',
+        name: "World Okapi Day",
+        date: "October/18/2020",
+        description: "World Okapi Day raises awareness about the endangered okapi and its habitat in the rainforests of Africa.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event39',
+        name: "International Sloth Day",
+        date: "October/20/2020",
+        description: "International Sloth Day aims to raise awareness about the conservation of sloths and their habitat.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event40',
+        name: "National Reptile Awareness Day",
+        date: "October/21/2020",
+        description: "National Reptile Awareness Day promotes awareness of reptile species and their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event41',
+        name: "World Earthworm Day",
+        date: "October/21/2020",
+        description: "World Earthworm Day raises awareness about the ecological importance of earthworms in soil health.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event42',
+        name: "International Wombat Day",
+        date: "October/22/2020",
+        description: "International Wombat Day celebrates wombats and promotes their conservation and welfare.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event43',
+        name: "International Snow Leopard Day",
+        date: "October/23/2020",
+        description: "International Snow Leopard Day raises awareness about the endangered snow leopard and its habitat.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event44',
+        name: "Freshwater Dolphin Day",
+        date: "October/24/2020",
+        description: "Freshwater Dolphin Day promotes awareness about the conservation of freshwater dolphin species.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event45',
+        name: "International Gibbon Day",
+        date: "October/24/2020",
+        description: "International Gibbon Day raises awareness about gibbons and their habitats, emphasizing the need for conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event46',
+        name: "International Day of Climate Action",
+        date: "October/24/2020",
+        description: "International Day of Climate Action promotes awareness and action towards climate change and environmental issues.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event26',
+        name: "World Ecology Day",
+        date: "November/1/2020",
+        description: "World Ecology Day, celebrated on November 1st, promotes awareness of environmental issues and the importance of ecological balance.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event27',
+        name: "World Vegan Day",
+        date: "November/1/2020",
+        description: "World Vegan Day, observed on November 1st, celebrates the benefits of veganism for animals, people, and the environment.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event28',
+        name: "World Basking Shark Day",
+        date: "November/3/2020",
+        description: "World Basking Shark Day, celebrated on November 3rd, raises awareness about basking sharks and the need for their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event29',
+        name: "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict",
+        date: "November/6/2020",
+        description: "This day emphasizes the importance of protecting the environment during times of war and armed conflict.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event30',
+        name: "National Bison Day",
+        date: "November/7/2020", 
+        description: "National Bison Day celebrates the significance of bison in American history and the efforts to conserve them.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event31',
+        name: "America Recycles Day",
+        date: "November/15/2020",
+        description: "America Recycles Day, observed on November 15th, promotes recycling and encourages individuals to reduce waste.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event32',
+        name: "World Fisheries Day",
+        date: "November/21/2020",
+        description: "World Fisheries Day, celebrated on November 21st, raises awareness about the importance of sustainable fishing and marine biodiversity.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event33',
+        name: "International Jaguar Day",
+        date: "November/29/2020",
+        description: "International Jaguar Day, observed on November 29th, aims to raise awareness about the conservation of jaguars and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event34',
+        name: "International Cheetah Day",
+        date: "December/4/2020",
+        description: "International Cheetah Day, celebrated on December 4th, raises awareness about the plight of cheetahs and the importance of their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event35',
+        name: "Wildlife Conservation Day",
+        date: "December/4/2020",
+        description: "Wildlife Conservation Day, observed on December 4th, focuses on the protection of endangered species and their habitats.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event36',
+        name: "World Soil Day",
+        date: "December/5/2020",
+        description: "World Soil Day, celebrated on December 5th, highlights the importance of healthy soil for food security and ecosystems.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event37',
+        name: "International Mountain Day",
+        date: "December/11/2020",
+        description: "International Mountain Day, observed on December 11th, raises awareness about the importance of mountains and the need for their conservation.",
+        type: "holiday",
+        everyYear: true
+    },
+    {
+        id: 'event38',
+        name: "Monkey Day",
+        date: "December/14/2020",
+        description: "Monkey Day, celebrated on December 14th, is a day to raise awareness about monkeys and their conservation.",
+        type: "holiday",
+        everyYear: true
+    }
+    
+    ]
+    })
+})
+    </script>
+</body>
+</html>

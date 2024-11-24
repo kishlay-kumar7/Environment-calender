@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environment Awareness</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ev.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- navbar ka section  -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="container">
+      <a id="pad" class="navbar-brand"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#v">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#save-reasons">Why to save?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sustainability">Sustainable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calender.html">Calender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#c">Contact</a>
+          </li>
+        </ul>
+        <a id="buu" href="#" class="btn btn-warning ml-auto"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- video ka section  -->
+  <div id="v">
+    <video src="components/v1.mp4" loop muted autoplay playsinline></video>
+  </div>
+  <div id="welcome-message" style="display: none;"></div>
+
+
+
+  <!-- why to save ka section  -->
+  <section id="save-reasons" class="content-section">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5">Why Save the Environment?</h2>
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-5">
+          <img src="components/biodiversity.jpg" alt="Biodiversity Preservation" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <h5 class="reason-heading">Biodiversity Preservation</h5>
+          <p class="lead reason-content">
+            <span class="highlight">Biodiversity</span> is crucial for maintaining the balance of ecosystems. Each species plays a unique role, contributing to the overall health of the planet. Protecting biodiversity ensures that ecosystems can thrive, providing essential services like <span class="highlight">pollination</span>, <span class="highlight">water purification</span>, and <span class="highlight">climate regulation</span>.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-5 align-items-center flex-md-row-reverse">
+        <div class="col-md-5">
+          <img src="components/climatechange.jpg" alt="Climate Change" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <h5 class="reason-heading">Climate Change</h5>
+          <p class="lead reason-content">
+            <span class="highlight">Climate change</span> poses a significant threat to our planet. By reducing pollution and conserving natural resources, we can slow its effects and reduce <span class="highlight">greenhouse gas emissions</span>, creating a healthier and more stable climate for future generations.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-5">
+          <img src="components/economic.jpeg" alt="Economic Benefits" class="img-fluid rounded">
+        </div>
+        <div class="col-md-7">
+          <h5 class="reason-heading">Economic Benefits of Sustainability</h5>
+          <p class="lead reason-content">
+            Sustainable practices not only protect the environment but also support long-term <span class="highlight">economic growth</span>. By investing in <span class="highlight">renewable energy</span>, reducing waste, and conserving resources, we can create jobs, reduce costs, and promote stability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- yeh sustainability ka section hai -->
+  <section id="sustainability" class="content-section" style="background-color: #d0f1d0; padding: 50px 0;">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5">Embracing Sustainability</h2>
+      
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="components/sustanaible.jpg" alt="Sustainability" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6">
+          <h5 class="sustainability-heading font-weight-bold mb-3">A Path to a Greener Future</h5>
+          <p class="lead sustainability-content">
+            Embracing <span class="highlight">sustainability</span> is essential for creating a greener, healthier world. It involves reducing waste, conserving natural resources, and adopting renewable energy sources. By shifting towards sustainable practices, we can ensure a balanced coexistence with our planet and create a positive impact for <span class="highlight">future generations</span>.
+          </p>
+          <p class="lead sustainability-content">
+            Sustainability also focuses on long-term <span class="highlight">economic resilience</span> and social well-being. Through conscious choices in areas like energy consumption, waste management, and responsible production, we support not only the environment but also sustainable economic growth. Let’s make every step count toward a cleaner and more sustainable future!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- yeh footer hai -->
+  <footer id="c" class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contributors</h5>
+          <div class="d-flex justify-content-start contributors-container">
+            
+            <div class="contributor-container mr-3">
+              <img src="components/kishlay.jpg" alt="Contributor 3" class="contributor-image">
+              <h6 class="contributor-name mb-0 pt-4">kishlay</h6>
+              <small>Developer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-right mt-4 mt-md-0 contact-container">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+          <p><i class="fas fa-phone mr-2"></i> +91 9508360145</p>
+          <p><i class="fas fa-envelope mr-2"></i> ecodate@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Jalandhar, LPU, India (Punjab)</p>
+          <div class="social-links pt-4 mt-3">
+            <h6 class="text-uppercase font-weight-bold text-warning">Follow Us</h6>
+            <a href="https://facebook.com" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <p class="mb-0 font-weight-bold text-warning" style="font-size: 16px;">&copy; 2024 EcoDates. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="ev.js"></script>
+</body>
+</html>

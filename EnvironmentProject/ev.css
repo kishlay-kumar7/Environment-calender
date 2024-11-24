@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.custom-navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  color: #2e7d32;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.video-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-section {
+  padding: 5rem 0;
+  background-color: #f7f7f7;
+}
+
+.display-4 {
+  font-family: 'Georgia', serif;
+}
+
+footer {
+  background-color: #343a40;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.contributors-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.contributor-container {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.contributor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.contributor-name {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+#contact-detail {
+  margin-bottom: 10px;
+}
+
+.hmhai {
+  color: #fff;
+  transition: color 0.3s ease !important;
+}
+
+.hmhai:hover {
+  color: gold !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .contributor-image {
+    width: 80px;
+  }
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+#save-reasons {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+#save-reasons img {
+  max-width: 100%;
+  height: auto;
+}
+
+#save-reasons h2 {
+  color: #333;
+}
+
+#save-reasons h5 {
+  color: #FFA500;
+}
+
+#save-reasons p {
+  color: #555;
+}
+
+#save-reasons h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.reason-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.reason-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.highlight {
+  background-color: #FFD700;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .align-items-center .col-md-5 img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .row.align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-md-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+#buu {
+  margin-left: auto;
+}
